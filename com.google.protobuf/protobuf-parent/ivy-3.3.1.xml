@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
 	<info organisation="com.google.protobuf"
 		module="protobuf-parent"
 		revision="3.3.1"
@@ -25,7 +25,6 @@
 		<m:dependency.management__org.easymock__easymock__version>2.2</m:dependency.management__org.easymock__easymock__version>
 		<m:properties__generated.testsources.lite.dir>${project.build.directory}/generated-test-sources-lite</m:properties__generated.testsources.lite.dir>
 		<m:properties__generated.sources.lite.dir>${project.build.directory}/generated-sources-lite</m:properties__generated.sources.lite.dir>
-		<e:sbtTransformHash>6cf0c5ea3b97a31bf5f6056ae2c385151a9df5ee</e:sbtTransformHash>
 		<m:properties__generated.testsources.dir>${project.build.directory}/generated-test-sources</m:properties__generated.testsources.dir>
 		<m:properties__test.proto.dir>src/test/proto</m:properties__test.proto.dir>
 		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
