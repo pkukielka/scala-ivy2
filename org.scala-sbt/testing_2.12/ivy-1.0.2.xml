@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
 	<info organisation="org.scala-sbt"
 		module="testing_2.12"
 		revision="1.0.2"
@@ -10,6 +10,7 @@
 		<description homepage="https://github.com/sbt/sbt">
 		sbt is an interactive build tool
 		</description>
+		<e:sbtTransformHash>0f35b01b1c29df19e18342d35e8945a555c76c1e</e:sbtTransformHash>
 	</info>
 	<configurations>
 		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
@@ -27,14 +28,14 @@
 		<artifact name="testing_2.12" type="jar" ext="jar" conf="master"/>
 	</publications>
 	<dependencies>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.12.3" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="org.scala-sbt" name="test-agent" rev="1.0.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="com.eed3si9n" name="sjson-new-core_2.12" rev="0.8.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="org.scala-sbt" name="test-interface" rev="1.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="org.scala-sbt" name="launcher-interface" rev="1.0.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="com.eed3si9n" name="sjson-new-scalajson_2.12" rev="0.8.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="org.scala-sbt" name="io_2.12" rev="1.0.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="org.scala-sbt" name="zinc-classpath_2.12" rev="1.0.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="org.scala-sbt" name="util-logging_2.12" rev="1.0.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.12.3" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="org.scala-sbt" name="test-agent" rev="1.0.2" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="com.eed3si9n" name="sjson-new-core_2.12" rev="0.8.0" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="org.scala-sbt" name="test-interface" rev="1.0" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="org.scala-sbt" name="launcher-interface" rev="1.0.0" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="com.eed3si9n" name="sjson-new-scalajson_2.12" rev="0.8.0" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="org.scala-sbt" name="io_2.12" rev="1.0.1" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="org.scala-sbt" name="zinc-classpath_2.12" rev="1.0.1" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="org.scala-sbt" name="util-logging_2.12" rev="1.0.1" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
 	</dependencies>
 </ivy-module>
