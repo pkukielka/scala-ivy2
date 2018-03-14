@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0">
+	<info organisation="org.scala-lang.scala-sha-bootstrap.test.files.codelib"
+		module="code"
+		revision="e737b123d31eede5594ceda07caafed1673ec472"
+		status="release"
+		publication="20180216100005"
+		default="true"
+	/>
+	<configurations>
+		<conf name="default" visibility="public"/>
+	</configurations>
+	<publications>
+		<artifact name="code" type="jar" ext="jar" conf="default"/>
+	</publications>
+</ivy-module>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0">
+	<info organisation="org.scala-lang.scala-sha-bootstrap.test.files.lib"
+		module="genericNest"
+		revision="b1ec8a095cec4902b3609d74d274c04365c59c04"
+		status="release"
+		publication="20180216100002"
+		default="true"
+	/>
+	<configurations>
+		<conf name="default" visibility="public"/>
+	</configurations>
+	<publications>
+		<artifact name="genericNest" type="jar" ext="jar" conf="default"/>
+	</publications>
+</ivy-module>

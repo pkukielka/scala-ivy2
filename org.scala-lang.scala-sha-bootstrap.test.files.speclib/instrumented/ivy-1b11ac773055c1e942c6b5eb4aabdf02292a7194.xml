@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0">
+	<info organisation="org.scala-lang.scala-sha-bootstrap.test.files.speclib"
+		module="instrumented"
+		revision="1b11ac773055c1e942c6b5eb4aabdf02292a7194"
+		status="release"
+		publication="20180216100006"
+		default="true"
+	/>
+	<configurations>
+		<conf name="default" visibility="public"/>
+	</configurations>
+	<publications>
+		<artifact name="instrumented" type="jar" ext="jar" conf="default"/>
+	</publications>
+</ivy-module>
