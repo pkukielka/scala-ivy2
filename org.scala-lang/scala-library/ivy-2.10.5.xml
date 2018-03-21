@@ -4,7 +4,7 @@
 		module="scala-library"
 		revision="2.10.5"
 		status="release"
-		publication="20150227025430"
+		publication="20150227025400"
 		e:info.apiURL="http://www.scala-lang.org/api/2.10.5/"
 	>
 		<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html

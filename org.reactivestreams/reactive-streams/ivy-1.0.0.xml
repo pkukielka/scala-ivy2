@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
 	<info organisation="org.reactivestreams"
 		module="reactive-streams"
 		revision="1.0.0"
@@ -10,7 +10,6 @@
 		<description homepage="http://www.reactive-streams.org/">
 		A Protocol for Asynchronous Non-Blocking Data Sequence
 		</description>
-		<e:sbtTransformHash>149594a9acca8cfedcc63a0b555b38064f2f7a6d</e:sbtTransformHash>
 	</info>
 	<configurations>
 		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>

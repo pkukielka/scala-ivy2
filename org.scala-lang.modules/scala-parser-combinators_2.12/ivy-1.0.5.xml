@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
 	<info organisation="org.scala-lang.modules"
 		module="scala-parser-combinators_2.12"
 		revision="1.0.5"
@@ -10,7 +10,6 @@
 		<description homepage="http://www.scala-lang.org/">
 		scala-parser-combinators
 		</description>
-		<e:sbtTransformHash>e131f09993a9b0b5238e204eada913a2e0debb82</e:sbtTransformHash>
 	</info>
 	<configurations>
 		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
@@ -28,8 +27,8 @@
 		<artifact name="scala-parser-combinators_2.12" type="bundle" ext="jar" conf="master"/>
 	</publications>
 	<dependencies>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.12.1" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
-		<dependency org="junit" name="junit" rev="4.12" force="true" conf="test->runtime(*),master(compile)"/>
-		<dependency org="com.novocode" name="junit-interface" rev="0.11" force="true" conf="test->runtime(*),master(compile)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.12.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="junit" name="junit" rev="4.12" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="com.novocode" name="junit-interface" rev="0.11" force="true" conf="test->runtime(*),master(*)"/>
 	</dependencies>
 </ivy-module>

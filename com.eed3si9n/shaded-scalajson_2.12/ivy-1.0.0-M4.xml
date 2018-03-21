@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
 	<info organisation="com.eed3si9n"
 		module="shaded-scalajson_2.12"
 		revision="1.0.0-M4"
@@ -10,7 +10,6 @@
 		<description homepage="https://github.com/mdedetrich/scalajson">
 		shaded-scalajson
 		</description>
-		<e:sbtTransformHash>0cf6f78ceee52d9be8e097c9f49cf346284c5f79</e:sbtTransformHash>
 	</info>
 	<configurations>
 		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
@@ -28,9 +27,9 @@
 		<artifact name="shaded-scalajson_2.12" type="jar" ext="jar" conf="master"/>
 	</publications>
 	<dependencies>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.12.2" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
-		<dependency org="org.specs2" name="specs2-core_2.12" rev="3.9.1" force="true" conf="test->runtime(*),master(compile)"/>
-		<dependency org="org.specs2" name="specs2-scalacheck_2.12" rev="3.9.1" force="true" conf="test->runtime(*),master(compile)"/>
-		<dependency org="org.scalacheck" name="scalacheck_2.12" rev="1.13.4" force="true" conf="test->runtime(*),master(compile)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.12.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.specs2" name="specs2-core_2.12" rev="3.9.1" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.specs2" name="specs2-scalacheck_2.12" rev="3.9.1" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.scalacheck" name="scalacheck_2.12" rev="1.13.4" force="true" conf="test->runtime(*),master(*)"/>
 	</dependencies>
 </ivy-module>
