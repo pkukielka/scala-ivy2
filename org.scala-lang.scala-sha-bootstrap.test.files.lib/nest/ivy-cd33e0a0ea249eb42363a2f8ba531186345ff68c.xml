@@ -4,7 +4,7 @@
 		module="nest"
 		revision="cd33e0a0ea249eb42363a2f8ba531186345ff68c"
 		status="release"
-		publication="20180312105734"
+		publication="20180216100004"
 		default="true"
 	/>
 	<configurations>

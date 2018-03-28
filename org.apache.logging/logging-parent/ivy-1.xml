@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
 	<info organisation="org.apache.logging"
 		module="logging-parent"
 		revision="1"
 		status="release"
 		publication="20170121214459"
 	>
+		<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt" />
 		<description homepage="https://logging.apache.org/">
 		Parent pom for Apache Logging Services projects.
 		</description>
 		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
 		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
-		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
 		<m:properties__organization.logo>https://www.apache.org/images/asf_logo_wide.gif</m:properties__organization.logo>
-		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
 		<m:properties__gpg.useagent>true</m:properties__gpg.useagent>
-		<m:properties__maven.compiler.target>1.7</m:properties__maven.compiler.target>
 		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
 		<m:properties__surefire.version>2.19.1</m:properties__surefire.version>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<e:sbtTransformHash>d8fec298c7e6e08a34c4df066d5eab4aa26c6430</e:sbtTransformHash>
+		<m:properties__maven.compiler.target>1.7</m:properties__maven.compiler.target>
 		<m:maven.plugins>org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__null</m:maven.plugins>
 		<m:properties__maven.compiler.source>1.7</m:properties__maven.compiler.source>
 	</info>

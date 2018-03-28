@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
 	<info organisation="org.scala-sbt"
 		module="util-interface"
 		revision="1.1.2"
@@ -10,6 +10,7 @@
 		<description homepage="https://github.com/sbt/util">
 		Util module for sbt
 		</description>
+		<e:sbtTransformHash>104d403be1a6a4433d21268b8a63426e64f90a3b</e:sbtTransformHash>
 	</info>
 	<configurations>
 		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>

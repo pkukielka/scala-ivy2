@@ -4,7 +4,7 @@
 		module="launcher-interface"
 		revision="1.0.0-M1"
 		status="release"
-		publication="20150325162900"
+		publication="20150325162932"
 	>
 		<license name="BSD" url="http://opensource.org/licenses/BSD-2-Clause" />
 		<description homepage="http://scala-sbt.org">

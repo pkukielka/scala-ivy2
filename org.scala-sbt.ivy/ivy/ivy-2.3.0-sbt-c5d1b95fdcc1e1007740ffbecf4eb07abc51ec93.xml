@@ -4,7 +4,7 @@
 		module="ivy"
 		revision="2.3.0-sbt-c5d1b95fdcc1e1007740ffbecf4eb07abc51ec93"
 		status="release"
-		publication="20150625222649"
+		publication="20150626183650"
 	>
 		<license name="Apache-2.0" url="https://github.com/sbt/ivy/blob/2.3.x-sbt/LICENSE" />
 		<description homepage="https://github.com/sbt/ivy">

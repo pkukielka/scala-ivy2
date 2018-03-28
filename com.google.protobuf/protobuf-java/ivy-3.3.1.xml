@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
 	<info organisation="com.google.protobuf"
 		module="protobuf-java"
 		revision="3.3.1"
 		status="release"
 		publication="20170515194637"
 	>
+		<license name="3-Clause BSD License" url="https://opensource.org/licenses/BSD-3-Clause" />
 		<description homepage="">
 		Core Protocol Buffers library. Protocol Buffers are a way of encoding structured data in an
     efficient yet extensible format.
@@ -24,6 +25,7 @@
 		<m:dependency.management__org.easymock__easymock__version>2.2</m:dependency.management__org.easymock__easymock__version>
 		<m:properties__generated.testsources.lite.dir>${project.build.directory}/generated-test-sources-lite</m:properties__generated.testsources.lite.dir>
 		<m:properties__generated.sources.lite.dir>${project.build.directory}/generated-sources-lite</m:properties__generated.sources.lite.dir>
+		<e:sbtTransformHash>42de4e568b455346f82335b7c351957fb6ea5797</e:sbtTransformHash>
 		<m:properties__generated.testsources.dir>${project.build.directory}/generated-test-sources</m:properties__generated.testsources.dir>
 		<m:properties__test.proto.dir>src/test/proto</m:properties__test.proto.dir>
 		<m:maven.plugins>null__maven-antrun-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null|org.apache.felix__maven-bundle-plugin__null</m:maven.plugins>
@@ -45,12 +47,8 @@
 		<artifact name="protobuf-java" type="bundle" ext="jar" conf="master"/>
 	</publications>
 	<dependencies>
-		<dependency org="junit" name="junit" rev="4.12" force="true" conf="test->runtime(*),master(*)"/>
-		<dependency org="org.easymock" name="easymock" rev="2.2" force="true" conf="test->runtime(*),master(*)"/>
-		<dependency org="org.easymock" name="easymockclassextension" rev="2.2.1" force="true" conf="test->runtime(*),master(*)"/>
-		<override org="com.google.guava" module="guava" matcher="exact" rev="19.0"/>
-		<override org="org.easymock" module="easymock" matcher="exact" rev="2.2"/>
-		<override org="junit" module="junit" matcher="exact" rev="4.12"/>
-		<override org="org.easymock" module="easymockclassextension" matcher="exact" rev="2.2.1"/>
+		<dependency org="junit" name="junit" rev="4.12" force="true" conf="test->runtime(*),master(compile)"/>
+		<dependency org="org.easymock" name="easymock" rev="2.2" force="true" conf="test->runtime(*),master(compile)"/>
+		<dependency org="org.easymock" name="easymockclassextension" rev="2.2.1" force="true" conf="test->runtime(*),master(compile)"/>
 	</dependencies>
 </ivy-module>

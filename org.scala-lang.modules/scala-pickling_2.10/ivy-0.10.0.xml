@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
-	<info organisation="org.scala-lang.modules"
-		module="scala-pickling_2.10"
-		revision="0.10.0"
-		status="release"
-		publication="20150206205700"
-	>
-		<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html " />
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.scala-lang.modules" module="scala-pickling_2.10" revision="0.10.0" status="release" publication="20150206145759">
+		<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html "/>
 		<description homepage="https://github.com/scala/pickling">
 		scala-pickling
 		</description>
-		<e:sbtTransformHash>96aaace682b8d49a56d2bce2cfc38b06574bb991</e:sbtTransformHash>
 	</info>
 	<configurations>
 		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>

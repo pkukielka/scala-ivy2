@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
 	<info organisation="org.scala-sbt"
 		module="librarymanagement-ivy_2.12"
 		revision="1.1.2"
@@ -10,6 +10,7 @@
 		<description homepage="https://github.com/sbt/librarymanagement">
 		Library management module for sbt
 		</description>
+		<e:sbtTransformHash>694eaae3d97ccf40fb7fc42d72e3cdfd5410e11c</e:sbtTransformHash>
 	</info>
 	<configurations>
 		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
@@ -27,11 +28,11 @@
 		<artifact name="librarymanagement-ivy_2.12" type="jar" ext="jar" conf="master"/>
 	</publications>
 	<dependencies>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.12.4" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="org.scala-sbt" name="librarymanagement-core_2.12" rev="1.1.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="com.eed3si9n" name="sjson-new-core_2.12" rev="0.8.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="org.scala-sbt.ivy" name="ivy" rev="2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="org.scalatest" name="scalatest_2.12" rev="3.0.1" force="true" conf="test->runtime(*),master(*)"/>
-		<dependency org="org.scalacheck" name="scalacheck_2.12" rev="1.13.4" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.12.4" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="org.scala-sbt" name="librarymanagement-core_2.12" rev="1.1.2" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="com.eed3si9n" name="sjson-new-core_2.12" rev="0.8.2" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="org.scala-sbt.ivy" name="ivy" rev="2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="org.scalatest" name="scalatest_2.12" rev="3.0.1" force="true" conf="test->runtime(*),master(compile)"/>
+		<dependency org="org.scalacheck" name="scalacheck_2.12" rev="1.13.4" force="true" conf="test->runtime(*),master(compile)"/>
 	</dependencies>
 </ivy-module>
