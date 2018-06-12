@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="org.scala-lang" module="scala-reflect" revision="2.13.0-pre-SNAPSHOT" status="integration" publication="20180427165142">
+		<license url="http://www.scala-lang.org/license.html" name="BSD 3-Clause"/>
+		<description homepage="http://www.scala-lang.org">
+		Scala Reflection Library
+		</description>
+	</info>
+	<configurations>
+		<conf description="" visibility="public" name="compile"/>
+		<conf extends="compile" description="" visibility="public" name="runtime"/>
+		<conf extends="runtime" description="" visibility="public" name="test"/>
+		<conf description="" visibility="public" name="provided"/>
+		<conf description="" visibility="public" name="optional"/>
+		
+		
+		
+		
+		<conf description="" visibility="public" name="sources"/>
+		<conf description="" visibility="public" name="docs"/>
+		<conf description="" visibility="public" name="pom"/>
+		<conf extends="runtime" description="Default" visibility="public" name="default"/>
+	</configurations>
+	<publications>
+		<artifact conf="pom" ext="pom" type="pom" name="scala-reflect"/>
+		<artifact conf="compile" ext="jar" type="jar" name="scala-reflect"/>
+		<artifact e:classifier="sources" conf="sources" ext="jar" type="src" name="scala-reflect"/>
+		<artifact e:classifier="javadoc" conf="docs" ext="jar" type="doc" name="scala-reflect"/>
+	</publications>
+	<dependencies>
+		<dependency conf="compile->default(compile)" rev="2.13.0-pre-SNAPSHOT" name="scala-library" org="org.scala-lang"/>
+	</dependencies>
+</ivy-module>
