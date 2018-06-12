@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-	<info organisation="jline" module="jline" revision="2.11" status="release" publication="20130519150100">
-		<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
-		<description homepage=""/>
-		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
-		<m:properties__jansi.version>1.11</m:properties__jansi.version>
+	<info organisation="jline"
+		module="jline"
+		revision="2.11"
+		status="release"
+		publication="20130519210100"
+	>
+		<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php" />
+		<description homepage="" />
 		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
-		<m:properties__sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</m:properties__sonatypeOssDistMgmtSnapshotsUrl>
-		<m:properties__maven.test.redirectTestOutputToFile>true</m:properties__maven.test.redirectTestOutputToFile>
-		<m:properties__maven.build.timestamp.format>yyyyMMddHHmm</m:properties__maven.build.timestamp.format>
 		<m:properties__build.timestamp>${maven.build.timestamp}</m:properties__build.timestamp>
+		<m:properties__maven.build.timestamp.format>yyyyMMddHHmm</m:properties__maven.build.timestamp.format>
+		<m:properties__maven.test.redirectTestOutputToFile>true</m:properties__maven.test.redirectTestOutputToFile>
+		<m:properties__jansi.version>1.11</m:properties__jansi.version>
+		<e:sbtTransformHash>8d3ea6a1c3ba07735f26bf7a37c304d5e3185cfa</e:sbtTransformHash>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</m:properties__sonatypeOssDistMgmtSnapshotsUrl>
 		<m:maven.plugins>org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-enforcer-plugin__1.0|null__maven-surefire-plugin__2.12|null__maven-compiler-plugin__2.5|null__maven-source-plugin__2.1.2|org.codehaus.mojo__animal-sniffer-maven-plugin__1.9|org.apache.felix__maven-bundle-plugin__2.1.0|null__maven-jar-plugin__2.4|null__maven-scm-plugin__1.8.1|null__maven-shade-plugin__1.6|null__maven-site-plugin__null|com.mycila.maven-license-plugin__maven-license-plugin__1.9.0</m:maven.plugins>
 	</info>
 	<configurations>
