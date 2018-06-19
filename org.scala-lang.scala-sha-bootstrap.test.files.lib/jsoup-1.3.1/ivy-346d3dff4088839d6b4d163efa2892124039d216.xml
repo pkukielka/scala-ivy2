@@ -4,7 +4,7 @@
 		module="jsoup-1.3.1"
 		revision="346d3dff4088839d6b4d163efa2892124039d216"
 		status="release"
-		publication="20180424171954"
+		publication="20180426105839"
 		default="true"
 	/>
 	<configurations>

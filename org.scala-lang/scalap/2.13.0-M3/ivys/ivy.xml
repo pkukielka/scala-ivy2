@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info publication="20180427170305" status="release" revision="2.13.0-M3" module="scalap" organisation="org.scala-lang">
+		<license url="http://www.scala-lang.org/license.html" name="BSD 3-Clause"/>
+		<description homepage="http://www.scala-lang.org">
+		Scala Bytecode Parser
+		</description>
+	</info>
+	<configurations>
+		<conf description="" visibility="public" name="compile"/>
+		<conf extends="compile" description="" visibility="public" name="runtime"/>
+		<conf extends="runtime" description="" visibility="public" name="test"/>
+		<conf description="" visibility="public" name="provided"/>
+		<conf description="" visibility="public" name="optional"/>
+		
+		
+		
+		
+		<conf description="" visibility="public" name="sources"/>
+		<conf description="" visibility="public" name="docs"/>
+		<conf description="" visibility="public" name="pom"/>
+		<conf extends="runtime" description="Default" visibility="public" name="default"/>
+	</configurations>
+	<publications>
+		<artifact conf="pom" ext="pom" type="pom" name="scalap"/>
+		<artifact conf="compile" ext="jar" type="jar" name="scalap"/>
+		<artifact e:classifier="sources" conf="sources" ext="jar" type="src" name="scalap"/>
+		<artifact e:classifier="javadoc" conf="docs" ext="jar" type="doc" name="scalap"/>
+	</publications>
+	<dependencies>
+		<dependency conf="compile-&gt;default(compile)" rev="2.13.0-M3" name="scala-compiler" org="org.scala-lang"/>
+	</dependencies>
+</ivy-module>
