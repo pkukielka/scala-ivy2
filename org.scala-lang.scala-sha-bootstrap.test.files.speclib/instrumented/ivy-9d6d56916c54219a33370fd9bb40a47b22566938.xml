@@ -4,7 +4,7 @@
 		module="instrumented"
 		revision="9d6d56916c54219a33370fd9bb40a47b22566938"
 		status="release"
-		publication="20180523143557"
+		publication="20180511174404"
 		default="true"
 	/>
 	<configurations>
